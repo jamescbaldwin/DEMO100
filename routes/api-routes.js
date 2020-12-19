@@ -34,33 +34,27 @@ module.exports = function(app) {
     console.log(req.body)
     db.Sellers.create({
       seller_name: req.body.seller_name,
-      // sellers_address: req.body.sellers_address,
-      sellers_email: req.body.sellers_email,
-      // SellerId: req.body.SellerId,
-    })
-   db.Item.create({
-     
       item_name: req.body.item_name,
       item_price: req.body.item_price,
+      sellers_email: req.body.sellers_email,
+      sellers_bio: req.body.sellers_bio
+    })
+
+   db.Item.create({
       seller_contact:req.body.sellers_email,
     })
     
   });
 
-  // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
     res.redirect("/");
   });
 
-  // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
-      // The user is not logged in, send back an empty object
       res.json({});
     } else {
-      // Otherwise send back the user's email and id
-      // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         email: req.user.email,
         id: req.user.id
@@ -68,14 +62,3 @@ module.exports = function(app) {
     }
   });
 };
-
-// work on that with tutor
-// figure out how to make it work in this file
-//const Item = require("../models/model");
-// module.exports = function(app) {
-//     app.get("/api/all", (req, res) => {
-//         Item.findAll({}).then(function(results) {
-//             res.json(results);
-//         });
-//     });
-// };
