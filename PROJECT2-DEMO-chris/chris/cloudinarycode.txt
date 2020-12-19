@@ -1,0 +1,45 @@
+This code will be set unto the front end js for the sellers page.
+
+const CLOUDINARY_ULR = 'https://api.cloudinary.com/v1_1/dsddpqsqm/upload'
+const CLOUDINARY_UPLOAD_PRESET = 'qt9whae8';
+var imgPreview = document.getElementbyId('img-preview')
+var fileUpload =  document.getElementbyId('file-upload')
+
+fileUpload.addEventListner('change', function(event){
+var file = event.target.files[0];
+var formData = new FormData ();
+formData.append('file', file);
+formData.append('upload_preset',CLOUDINARY_UPLOAD_PRESET );
+console.log(file)
+
+axios({
+url:CLOUDINARY_URL,
+method: 'POST',
+headers: {
+'Content-Type':'application/x-www-form-urlencoded'
+
+},
+data: formData
+}).then(function(res) {
+console.log(res)
+imgPreview.src = res.data.secure_url;
+}).catch(function(err) {
+console.error(err);
+});
+});
+
+
+what we need for html
+I put a parenthesis over the id's that we are using in the code above that link to the variables set.
+
+<div class='card'>
+<img src='random source not neccesary' (id='img-preview') />
+<label class='file-upload-container' for='file-upload'>
+<input (id='file-upload') type='file' style='display:none;'>
+Select and Image
+</label>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="the front end js file goes here"></script>
+

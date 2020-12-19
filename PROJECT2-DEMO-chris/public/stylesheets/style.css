@@ -1,0 +1,53 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+
+* {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+
+}
+body {
+  min-height: 300px;
+}
+#buyBox {
+  
+  border-bottom: 4px solid black;
+  width: 400px;
+  float: left;
+  height: 300px;
+  text-align: center;
+  margin: 30px;
+  margin-top: 0px;
+}
+#sellBox {
+  margin: 30px;
+  text-align: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 200px;
+  float: left;
+  height: 300px;
+  margin-top: 0px;
+ 
+}
+#categorieBox {
+  margin-top: 0px;
+  text-align: left;
+  border-bottom: 4px solid black;
+
+ 
+}
+#categoryList {
+  text-align: left;
+}
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 800;
+  color: black;
+  overflow: hidden;
+}

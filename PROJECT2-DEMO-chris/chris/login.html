@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Yard Sale</title>
+
+  <link rel="stylesheet" href="../public/stylesheets/main.css">
+
+  <link rel="stylesheet" href='../public/stylesheets/slider.css'>
+  <script src="../public/sliderContent/ism-2.2.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">YARD SALE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+      </ul>
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-light my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+
+  <!-- jumbotron begin -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" id='jumbo'>yardSale</h1>
+      <p class="lead">Buying & Selling made easy!</p>
+    </div>
+
+  </div>
+  <!-- jumbotron end -->
+
+  <!-- Carousel for random content?  -->
+  <!-- <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
+    <ol>
+      <li>
+        <img src="../public/sliderContent/assets/apparel.jpg">
+        <div class="ism-caption ism-caption-0" data-delay='200'>Apparel</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/homeDecor.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Furniture</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/games.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Gaming</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/gardening.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Outdoors &amp; Gardening</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/gym.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Sporting Goods</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/toddler.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Toys &amp; Toddlers</div>
+      </li>
+    </ol>
+  </div> -->
+  <!-- end of carousel -->
+
+  <div class="container">
+   
+    <div class="row">
+     <div class="col-md-2">
+
+     </div>
+   
+      <div class="col-md-8 col-md-offset-3">
+        <h2>Items for Sale</h2>
+        <form class="item">
+          <div class="form-group">
+            <label for="exampleInputItem">Item description:</label>
+            <input type="item" class="form-control" id="item-input" placeholder="Listing">
+          </div>
+          <!-- cloudinary code -->
+          <div class='card'>
+            <img src='' id='img-preview'/>
+            <label class='file-upload-container' for='file-upload'>
+            <input id='file-upload' type='file' style='display:none;'>
+            Select and Image
+            </label>
+            </div>
+<!-- cloudinary code end -->
+          <div class="form-group">
+            <!-- changed type to name instead of email/was giving a needs an @ to submit error -->
+            <label for="exampleInputSellerName">Seller Name:</label>
+            <input type="name" class="form-control" id="seller-name-input" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPrice">Asking Price:</label>
+            <input type="price" class="form-control" id="price-input" placeholder="Price">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br />
+        <p>Or sign up <a href="/">here</a></p>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>

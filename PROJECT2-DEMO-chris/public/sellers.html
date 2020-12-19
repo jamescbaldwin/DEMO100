@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GarageSwap</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href='stylesheets/slider.css'>
+    <script src="/js/slider.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">GarageSwap</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/buyers">Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/seller">Sell</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-light my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+
+    <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
+      <ol>
+        <li>
+          <img src="/sliderContent/assets/apparel.jpg">
+          <div class="ism-caption ism-caption-0" data-delay='200'>Apparel</div>
+        </li>
+        <li>
+          <img src='sliderContent/assets/homeDecor.jpg'>
+          <div class="ism-caption ism-caption-0" data-delay='200'>Furniture</div>
+        </li>
+        <li>
+          <img src='sliderContent/assets/games.jpg'>
+          <div class="ism-caption ism-caption-0" data-delay='200'>Gaming</div>
+        </li>
+        <li>
+          <img src='sliderContent/assets/gardening.jpg'>
+          <div class="ism-caption ism-caption-0" data-delay='200'>Outdoors &amp; Gardening</div>
+        </li>
+        <li>
+          <img src='sliderContent/assets/gym.jpg'>
+          <div class="ism-caption ism-caption-0" data-delay='200'>Sporting Goods</div>
+        </li>
+        <li>
+          <img src='sliderContent/assets/toddler.jpg'>
+          <div class="ism-caption ism-caption-0" data-delay='200'>Toys &amp; Toddlers</div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 mt-5">
+          <h2 class="text-center">Post an Item</h2>
+          <form class="login" id='sellerform'>
+            <div class="form-group">
+              <label for="exampleInputItem">Item for Sale:</label>
+              <input
+                type="item"
+                class="form-control"
+                id="item-input"
+                placeholder="Listing"
+              />
+            </div>
+            <!-- cloudinary code -->
+            <div class="card">
+              <img src="" id="img-preview" />
+              <label class="file-upload-container" for="file-upload">
+                <input id="file-upload" type="file" style="display: none" />
+                Select an Image
+              </label>
+            </div>
+            <!-- cloudinary code end -->
+            <div class="form-group">
+              <label for="exampleInputSellerName">Seller Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="seller-name-input"
+                placeholder="Name"
+              />
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleInputSellerName">Seller Address:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="seller-address"
+                placeholder="Address"
+              />
+            </div> -->
+            <div class="form-group">
+              <label for="exampleInputSellerName">Seller Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="seller-email"
+                placeholder="Email"
+              />
+            </div>
+      
+            <div class="form-group">
+              <label for="exampleInputPrice">Asking Price:</label>
+              <input
+                type="price"
+                class="form-control"
+                id="price-input"
+                placeholder="Price"
+              />
+            </div>
+            <button type="submit" id="sellerformBtn" class="btn btn-default">Submit</button>
+            <br><br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sellers.js"></script>
+  </body>
+</html>
