@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "user",
+    "username": "root",
     "password": "rootpassword",
     "database": "yardsale_db",
     "host": "localhost",
@@ -8,14 +8,14 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "user",
+    "username": "root",
     "password": "rootpassword",
     "database": "yardsale_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "user",
+    "username": "root",
     "password": "rootpassword",
     "database": "yardsale_db",
     "host": "localhost",
