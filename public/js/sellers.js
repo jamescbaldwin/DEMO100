@@ -1,34 +1,25 @@
 $(document).ready(() => {
-  // Getting references to our form and inputs
-  
   const sellername = $("#seller-name-input");
-  console.log(sellername)
   const sellerBio = $("#seller-bio");
-  console.log(sellerBio)
   const selleremail = $("#seller-email");
- 
   const itemInput = $("#item-input");
   const askingPrice= $("#price-input");
 
-  // When the form is submitted, we validate there's an sellername and password entered
   $('#sellerformBtn').on("click", event => {
     event.preventDefault();
-    var newseller= {
+    let newseller= {
       seller_name:  sellername.val(),
       sellers_email:  selleremail.val(),
       sellers_bio:  sellerBio.val(),
       item_name: itemInput.val(),
       item_price: askingPrice.val(),
-
     }
-    console.log(newseller)
 
     $.ajax({
       type: "POST",
       url: '/newseller',
       data: newseller
   }).then(function () {
-      console.log("Added a New Item: ");
       location.reload();
   })
 
@@ -38,7 +29,4 @@ $(document).ready(() => {
   $("#price-input").val("");
   $("#seller-bio").val("");
 });
-
- 
-  
 });

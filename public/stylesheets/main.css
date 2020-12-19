@@ -3,9 +3,11 @@
   font-family: ‘Dosis’, sans-serif;
 font-weight: 950;
 }
+
 body {
   min-height: 300px;
 }
+
 #buyBox {
   width: 30%;
   float: left;
@@ -14,6 +16,7 @@ body {
   margin: 30px;
   margin-top: 0px;
 }
+
 #sellBox {
   margin: 30px;
   text-align: center;
@@ -22,29 +25,25 @@ body {
   height: 200px;
   margin-top: 0px;
 }
+
 #categoryBox {
 text-align: center;
 float: left;
 height: 200px;
 width: 30%;
 }
+
 #categoryList {
   margin-right: 10px
   max-width: 30%;
 }
+
 #categoryh1 {
 font-size: 3.5em;
 font-weight: 600;
 overflow: hidden;
 }
-/* .link {
-  position: relative;
-  display: inline-block;
-  font-size: 4em;
-  font-weight: 800;
-  color: black;
-  overflow: hidden;
-} */
+
 .link2 {
   position: relative;
   display: inline-block;
@@ -53,9 +52,11 @@ overflow: hidden;
   color: black;
   overflow: hidden;
 }
+
 Body {
   max-height: 300px;
 }
+
 #footer {
 position: fixed;
 left: 0;
@@ -63,6 +64,7 @@ bottom: 0;
 width: 100%;
 text-align: center;
 }
+
 .link {
   font-size: 4em;
   font-weight: 800;
@@ -79,6 +81,7 @@ text-align: center;
   padding-left: 10px;
   text-decoration: none;
 }
+
 .link:hover {
   background:
      linear-gradient(
@@ -88,16 +91,19 @@ text-align: center;
        transparent
      );
 }
+
 #bodyText {
 font-size: 40px;
 margin: auto;
 margin-right: 60%;
 margin-left: 10px;
 }
+
 #aboutUs {
 margin-left: 10%;
 margin-right: 50%;
 }
+
 .shimmer {
 text-decoration: underline;
 margin-left: auto;
@@ -116,6 +122,7 @@ background-repeat: no-repeat;
 -webkit-animation-iteration-count: infinite;
 -webkit-background-size: 6rem 100%; /*50px*/
 }
+
 @-webkit-keyframes shimmer {
   0% {
       background-position: -4rem top; /*50px*/
@@ -127,6 +134,7 @@ background-repeat: no-repeat;
       background-position: 12.5rem top; /*200px*/
   }
 }
+
 @media (max-width: 1000px) {
 .link {
   position: relative;
@@ -136,9 +144,11 @@ background-repeat: no-repeat;
   color: black;
   overflow: hidden;
 }
+
 #aboutUs {
   display: none !important;
 }
+
 #buyBox {
   width: 30%;
   float: left;
@@ -147,6 +157,7 @@ background-repeat: no-repeat;
   margin: 100px;
   margin-top: 0px;
 }
+
 #sellBox {
   margin: 30px;
   text-align: center;
@@ -155,16 +166,19 @@ background-repeat: no-repeat;
   height: 200px;
   margin-top: 0px;
 }
+
 #categoryBox {
 text-align: center;
 width: 80%;
 height: 200px;
 }
+
 #categoryList {
   margin-right: 10px;
   margin-left: 20px;
   font-size: 70px;
 }
+
 #categoryh1 {
 margin-right: 20%;
 margin-left: 20%;
@@ -174,6 +188,7 @@ overflow: hidden;
 width: 80%;
 text-decoration: solid underline;
 }
+
 .link2 {
 position: relative;
 display: inline-block;

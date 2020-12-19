@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "rootpassword",
-    "database": "yardsale_db",
-    "host": "localhost",
+    "username": "vpazwqcakwyrvylx",
+    "password": "qyim3drgmgqmfah9",
+    "database": "p575hnwxoegrw5gy",
+    "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },

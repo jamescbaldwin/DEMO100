@@ -281,7 +281,6 @@ p.ism-badge a.ism-link:hover {
   50% { -webkit-transform: rotate(-5deg) scale(1.3); transform: rotate(-5deg) scale(1.3); }
   100% { -webkit-transform: rotate(0) scale(1.0); transform: rotate(0) scale(1.0); }
 }
-/* SLIDER */
 
 #my-slider {
     width: 100%;
@@ -355,9 +354,6 @@ p.ism-badge a.ism-link:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-
-/* SLIDES */
-
 #my-slider .ism-slide-0 .ism-img-frame {
     width: 100%;
 }
@@ -411,9 +407,6 @@ p.ism-badge a.ism-link:hover {
     width: 100%;
     top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);
 }
-
-
-/* CAPTIONS */
 
 #my-slider .ism-slide-0 .ism-caption-0.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
