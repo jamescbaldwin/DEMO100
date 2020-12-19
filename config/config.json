@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "rootpassword",
+    "database": "yardsale_db",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "eqq4z0d61h1t34oy",
+    "password": "g9fptiv7oups8nm5",
+    "database": "yyumxdc3d6fz5q40",
+    "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "eqq4z0d61h1t34oy",
+    "password": "g9fptiv7oups8nm5",
+    "database": "yyumxdc3d6fz5q40",
+    "host": "o677vxfi8ok6exrd.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
