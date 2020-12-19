@@ -1,24 +1,24 @@
 {
   "development": {
-    "username": "vpazwqcakwyrvylx",
-    "password": "qyim3drgmgqmfah9",
-    "database": "p575hnwxoegrw5gy",
-    "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+    "username": "user",
+    "password": "rootpassword",
+    "database": "yardsale_db",
+    "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "vpazwqcakwyrvylx",
-    "password": "qyim3drgmgqmfah9",
-    "database": "p575hnwxoegrw5gy",
-    "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+    "username": "user",
+    "password": "rootpassword",
+    "database": "yardsale_db",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "vpazwqcakwyrvylx",
-    "password": "qyim3drgmgqmfah9",
-    "database": "p575hnwxoegrw5gy",
-    "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+    "username": "user",
+    "password": "rootpassword",
+    "database": "yardsale_db",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }
