@@ -9,7 +9,7 @@ The yardsale (or garage-sale, tag-sale, etc.) has long been a staple of many com
 This application utilizes a series of technologies to navigate users through a online marketplace. A homepage will prompt both sellers to a page through which new items can be posted, and buyers to a page where they can browse all currently-posted items. The application utilizes javascript to route page-visitors, as well as to post and retrieve routing data. Specifically, jQuery was used to dynamiaclly-render a bootstrap layout of all posted items. Seller/Item data is stored in mySQL workbench, and models abstracting this data were created via Sequelize. Finally, the application has the capactity to connect locally, but has been offically deployed through Heroku, found in the link below.
 ```
 ### LINKS
-- (HEROKU LINK)[https://virtual-yardsale.herokuapp.com/]
+- (HEROKU LINK)[https://enigmatic-savannah-33392.herokuapp.com/]
 - (GITHUB REPO)[https://github.com/jamescbaldwin/PROJECT2-DEMO]
 - (TUTORIAL)[]
 
