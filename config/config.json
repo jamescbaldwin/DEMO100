@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "vpazwqcakwyrvylx",
-    "password": "qyim3drgmgqmfah9",
+    "username": "root",
+    "password": "rootpassword",
     "database": "p575hnwxoegrw5gy",
     "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
