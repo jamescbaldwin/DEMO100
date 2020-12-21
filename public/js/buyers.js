@@ -1,3 +1,18 @@
+$("card-columns").on("click", ".btn", function () {
+  let currentId = $(this).attr("data-id");
+  $(this).addClass("hide");
+  $(this).siblings(".alert").removeClass("hide");
+
+  $.ajax({
+    method: "DELETE",
+    url: "/api/newseller/" + currentId
+  }).then(function(response){
+    console.log("Delete",response)
+    getTodos();
+  });
+});
+
+function getTodos(){ 
 let container = $(".card-columns");
 
 $.get("/api/newseller", function(data) {
@@ -29,3 +44,6 @@ $('.btn').on('click', function () {
   $(this).siblings('.alert').removeClass('hide');
   
 });
+};
+
+getTodos();
