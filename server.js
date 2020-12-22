@@ -1,7 +1,7 @@
 const express = require("express");
 const session = require("express-session");
 const passport = require("./config/passport");
-const connection = require("./config/connection");
+// const connection = require("./config/connection");
 
 require("dotenv").config();
 
