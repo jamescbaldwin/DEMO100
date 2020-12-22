@@ -11,7 +11,7 @@ This application utilizes a series of technologies to navigate users through a o
 ### LINKS
 - (HEROKU LINK)[https://enigmatic-savannah-33392.herokuapp.com/]
 - (GITHUB REPO)[https://github.com/jamescbaldwin/PROJECT2-DEMO]
-- (TUTORIAL)[]
+- (TUTORIAL)[https://drive.google.com/file/d/1sjXznRUmMXNfuYiKVexkdZjfhf33pyKU/view]
 
 ### SCREENSHOT
 ![Screen Shot 2020-12-18 at 6 56 45 PM (2)](https://user-images.githubusercontent.com/70229636/102703574-83b4c580-423e-11eb-8e3c-6bb80d9c9e69.png)
